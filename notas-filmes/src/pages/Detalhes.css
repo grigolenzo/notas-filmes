@@ -1,0 +1,47 @@
+.detalhes-container {
+  padding: 20px;
+  color: #fff;
+}
+
+.detalhes-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.detalhes-poster {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.detalhes-info {
+  max-width: 600px;
+}
+
+.detalhes-info h1 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.detalhes-info p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.back-btn {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: #b20710;
+}

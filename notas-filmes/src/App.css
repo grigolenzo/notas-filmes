@@ -55,12 +55,13 @@ body {
 
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 32px;
   padding: 32px 5vw;
   margin-top: 32px;
 }
 
+/* Cada card ocupa no mínimo 280px e cresce até 1fr */
 .movie-card {
   background: rgba(20,20,20,0.95);
   border: 3px solid #fff;
@@ -71,8 +72,6 @@ body {
   flex-direction: column;
   align-items: center;
   transition: transform 0.2s;
-  max-width: 320px;
-  width: 100%;
 }
 
 .movie-card:hover {
@@ -121,4 +120,24 @@ body {
 
 .favorite-btn.active {
   color: gold;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .movie-poster {
+    height: 260px;
+  }
 }
